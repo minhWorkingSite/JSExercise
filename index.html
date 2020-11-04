@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="styles/jquery.datetimepicker.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <title>Javascript-Exercise</title>
+  </head>
+  <body>
+
+    <!-- <div class="container-fluid border border-warning text-center" id="showHeader">
+    </div> -->
+
+    <div class="container mt-4">
+      <span id="list-task">List Task</span>
+      <div class="d-inline p-2 ml-5 bg-primary text-white"></div>
+      <table class="table table-striped mt-3">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Deadline</th>
+            <th>Status</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="task-list"></tbody>
+      </table>
+
+      <div class="mt-5" id="task-menu">
+        <form id="task-form">
+          <div class="form-group">
+            <input type="text" id="taskName" placeholder="Task name" />
+          </div>
+          <div id="task-form">
+            <div class="form-group">
+              <input type="text" id="deadline" />
+            </div>
+          </div>
+          <div class="form-group">
+            <select id="comboBox">
+              <option>Finish</option>
+              <option>Process</option>
+            </select>
+          </div>
+          <input type="submit" value="Submit" class="btn btn-primary" />
+          <input type="button" value="Cancel" class="btn btn-primary" />
+        </form>
+      </div>
+    </div>
+  </body>
+  <script src="JS/index.js"></script>
+  <script src="JS/jquery.js"></script>
+  <script src="JS/jquery.datetimepicker.full.js"></script>
+  <script>
+    $("#deadline").datetimepicker();
+  </script>
+</html>
